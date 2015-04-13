@@ -3,6 +3,8 @@ package com.bloc.recursion;
 import java.util.*;
 
 public class RecursionUtils extends Object {
+    
+    static int mMaxNumber = 0;
 	/*
 	 * findMaxRecursively
 	 *
@@ -20,6 +22,18 @@ public class RecursionUtils extends Object {
 	 	 *	Implement this method, the return value must
 	 	 *	change
 		/************************************************/
-		return 0;
+        
+        if(numbers.size() == 0 ){
+            int maxNum = mMaxNumber;
+            mMaxNumber = 0;
+            return maxNum;
+        }
+        
+        if(mMaxNumber < numbers.get(0)){
+            mMaxNumber = numbers.get(0);
+        }
+        numbers.remove(0);
+        
+        return findMaxRecursively(numbers);
 	}
 }

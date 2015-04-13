@@ -34,4 +34,18 @@ class Ensemble extends Object {
 	 *	ASSIGNMENT:
 	 *	Create the second Ensemble constructor
 	/************************************************/
+ 
+    
+    Ensemble(Artist[] artists){
+        this.mArtists  = artists;
+        
+    }
+
+    
+    Ensemble(String name, Artist[] artists ){
+        this.mName = name;
+        this.mArtists  = artists;
+        
+    }
+    
 }

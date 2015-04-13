@@ -29,4 +29,8 @@ public interface Driver {
 	 *
 	 * @return nothing
 	 */
+    public abstract void getInCar();
+    public abstract void startEngine();
+    public abstract void driveFast();
+    
 }

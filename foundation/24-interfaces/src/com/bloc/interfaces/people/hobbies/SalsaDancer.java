@@ -30,4 +30,7 @@ public interface SalsaDancer {
 	 *
 	 * @return nothing
 	 */
+    public abstract void putOnShoes();
+    public abstract void findAPartner();
+    public abstract void salsa();
 }

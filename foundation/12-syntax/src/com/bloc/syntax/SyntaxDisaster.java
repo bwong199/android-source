@@ -8,7 +8,7 @@ public class SyntaxDisaster extends Object {
      /************************************************/
     
     public static void main(String [] args) {
-        boolean syntaxIsFun;
+        boolean syntaxIsFun = true;
         if (syntaxIsFun) {
         System.out.println("If you can see this message, you've won!");
         }

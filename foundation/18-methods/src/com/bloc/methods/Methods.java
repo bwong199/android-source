@@ -1,6 +1,9 @@
 package com.bloc.methods;
 
 import java.lang.reflect.Method;
+import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class Methods extends Object {
 
@@ -37,7 +40,7 @@ public class Methods extends Object {
 		 ************************************************/
 
 		// You are free to modify the return statement
-		return false;
+		return !original;
 	}
 
 	/*
@@ -60,6 +63,10 @@ public class Methods extends Object {
 		/************************************************
 		 * Your work goes here
 		 ************************************************/
+        int i;
+        for (i = 0; i < numbers.length; i++){
+            numbers[i] = -(numbers[i]);
+        }
 	}
 
 
@@ -92,8 +99,21 @@ public class Methods extends Object {
 		 ************************************************/
 
 		// You are free to modify the return statement
-		return new boolean [0];
-	}
+        boolean [] returnArray = new boolean[someNumbers.length];
+        for (int i = 0; i < someNumbers.length; i++){
+            if (someNumbers[i] > floor){
+                returnArray[i] = true;
+            }
+            else {
+                returnArray[i] = false;
+            }
+        
+        
+        }
+        return returnArray;
+        
+        
+    }
 
 	/*
 	 * getMinAndMax
@@ -119,7 +139,22 @@ public class Methods extends Object {
 		 ************************************************/
 
 		// You are free to modify the return statement
-		return new int[2];
+        
+        Arrays.sort(someNumbers);
+        int one = someNumbers[0];
+        int two;
+        if (someNumbers.length < 2){
+            two = one;
+        } else {
+            two = someNumbers[someNumbers.length - 1];
+        }
+        
+        
+
+        int[] returnArray = new int[2];
+        returnArray[0] = one;
+        returnArray[1] = two;
+        return returnArray;
 	}
 
 

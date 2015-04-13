@@ -24,12 +24,15 @@ public class FavoritePastries {
 	 *	Use a HashMap to store the relationship
 	 *	between rating and pastry: HashMap<Integer, List<Pastry>>
 	/************************************************/
-
+    private HashMap<Pastry, Integer> mFavoritePastries;
 
 	public FavoritePastries() {
 		/************************************************
  	 	 *	WORK HERE
 		/************************************************/
+        mFavoritePastries = new HashMap<Pastry, Integer>();
+        
+        
 	}
 
 	/* 
@@ -51,6 +54,7 @@ public class FavoritePastries {
 		/************************************************
  	 	 *	WORK HERE
 		/************************************************/
+        mFavoritePastries.put(pastry, rating);
 	}
 
 	/* 
@@ -69,6 +73,13 @@ public class FavoritePastries {
 		/************************************************
  	 	 *	WORK HERE, you must modify the return value
 		/************************************************/
+        for (Pastry pastries : mFavoritePastries.keySet()){
+            if (pastry == pastries){
+                mFavoritePastries.remove(pastry);
+                return true;
+            }
+            
+        }
 		return false;
 	}
 
@@ -90,10 +101,17 @@ public class FavoritePastries {
 		/************************************************
  	 	 *	WORK HERE, you must modify the return value
 		/************************************************/
+        Integer rating = mFavoritePastries.get(pastry);
+        if (rating !=null){
+            return rating;
+        }
+        else{
+            
 		return -1;
 	}
+    }
 
-	/* 
+	/*
 	 * getPastriesForRating
 	 *
 	 * Return a Set of all the Pastries with a given
@@ -113,7 +131,15 @@ public class FavoritePastries {
 		/************************************************
  	 	 *	WORK HERE, you must modify the return value
 		/************************************************/
-		return null;
+        ArrayList<Pastry> keys = new ArrayList<Pastry>();
+        
+        for(Pastry pastries : mFavoritePastries.keySet()){
+            if(mFavoritePastries.get(pastries) == rating){
+                keys.add(pastries);
+            }
+        }
+        return keys;
+
 	}
 
 }
