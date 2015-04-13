@@ -1,5 +1,12 @@
 package com.bloc.singletons;
 
+import java.util.ArrayList;
+import com.bloc.singletons.*;
+import com.bloc.singleton.listeners.*;
+import com.bloc.singleton.talkers.*;
+
+
+
 /************************************************
  *	ASSIGNMENT:
  *	Populate this class with the defined methods.
@@ -9,6 +16,7 @@ package com.bloc.singletons;
 /************************************************/
 
 public class Speakerphone extends Object {
+    
 	/*
 	 * get
 	 *
@@ -18,6 +26,23 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the get method
 	/************************************************/
+    
+
+        
+    private static Speakerphone sSpeakerphone;
+    private static ArrayList<Listener> mListener;
+    
+    public static Speakerphone get(){
+        if(sSpeakerphone == null){
+            sSpeakerphone = new Speakerphone();
+            mListener = new ArrayList<Listener>();
+        }
+        
+        return sSpeakerPhone;
+    }
+    
+    
+    
 
 	/*
 	 * addListener
@@ -31,6 +56,10 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the addListener method
 	/************************************************/
+    
+    public void addListener (Listener listener){
+        mListener.add(listener);
+    }
 
 	/*
 	 * removeListener
@@ -44,6 +73,11 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the removeListener method
 	/************************************************/
+    
+    public void removeListener (Listener listener){
+        mListener.remove(listener);
+        
+    }
 
 	/*
 	 * removeAll
@@ -56,6 +90,11 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the removeAll method
 	/************************************************/
+    
+    public void removeAll(Listener listener){
+        mListener.clear();
+    }
+    
 
 	/*
 	 * contains
@@ -70,7 +109,17 @@ public class Speakerphone extends Object {
 	/************************************************
 	 *	ASSIGNMENT:
 	 *	Implement the contains method
-	/************************************************/	
+	/************************************************/
+    
+    public void contains(Listener listener){
+        boolean Listener = true;
+        if(Listener){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
 	/*
 	 * shoutMessage
@@ -84,6 +133,14 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the shoutMessage method
 	/************************************************/
+    
+    public void shoutMessage(Talker talker){
+        String message = talker.getMessage();
+        for (Listener listener : mListener){
+            listener.onMessageReceived(message);
+        }
+        
+    }
 
 	/*
 	 * shoutMessage
@@ -103,5 +160,15 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the shoutMessage method
 	/************************************************/
+    
+    public void shoudMessage(Talker talker, Class cls){
+        String message = talker.getMessage();
+        for (Listener listener : mListener){
+            if(cls.isAssignableFrom(listener.getClass())){
+                listener.onMessageReceived(message);
+            }
+        }
+    }
+    
 
 }
