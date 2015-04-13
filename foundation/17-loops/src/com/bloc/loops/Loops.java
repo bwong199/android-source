@@ -11,6 +11,19 @@ public class Loops extends Object {
 		boolean temp = false;
 
 		//********** Starts Here ************************/
+        
+        int i = 7;
+        int j = 0;
+        while(i < 5){
+            temp = someBools[i];
+            someBools[i] = someBools[j];
+            someBools[j] = temp;
+            
+            i--;
+            j++;
+        }
+        
+        /**
 		temp = someBools[7];
 		someBools[7] = someBools[0];
 		someBools[0] = temp;
@@ -50,6 +63,13 @@ public class Loops extends Object {
 		/************************************************/
 
 		//********** Starts Here ************************/
+        
+        
+        for (i = 0; i < numArray.length - 1; i++ ){
+             numArray[i] = !someBools[i] ? 1 : 0;
+        }
+        
+        /*
 		numArray[0] = !someBools[0] ? 1 : 0;
 		numArray[1] = !someBools[1] ? 1 : 0;
 		numArray[2] = !someBools[2] ? 1 : 0;
