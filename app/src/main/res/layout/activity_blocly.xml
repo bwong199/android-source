@@ -7,9 +7,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="Hello, world!"
+        android:text="Text"
         android:textSize="26sp"
         android:gravity="center"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:editable = "true"/>
 
 </LinearLayout>
