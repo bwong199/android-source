@@ -11,7 +11,7 @@ import io.bloc.android.blocly.R;
 /**
  * Created by benwong on 2015-04-13.
  */
-public class BloclyActivity {
+
     public class BloclyActivity extends Activity {
         @Override
         protected void onCreate(Bundle savedInstanceState){
@@ -26,4 +26,4 @@ public class BloclyActivity {
             recyclerView.setAdapter(itemAdapter);
         }
     }
-}
+
