@@ -55,6 +55,7 @@ import io.bloc.android.blocly.api.model.RssItem;
             TextView content;
             View headerWrapper;
             ImageView headerImage;
+            String imageURL;
             RssItem rssItem;
 
             public ItemAdapterViewHolder(View itemView) {
