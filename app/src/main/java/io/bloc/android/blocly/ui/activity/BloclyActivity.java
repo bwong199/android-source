@@ -7,11 +7,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import io.bloc.android.blocly.R;
+import io.bloc.android.blocly.ui.adapter.ItemAdapter;
 
 /**
  * Created by benwong on 2015-04-13.
  */
-public class BloclyActivity {
+
     public class BloclyActivity extends Activity {
         @Override
         protected void onCreate(Bundle savedInstanceState){
