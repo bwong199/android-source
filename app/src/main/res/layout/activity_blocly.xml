@@ -11,11 +11,10 @@
         android:textSize="26sp"
         android:gravity="center"
         android:layout_gravity="center"
-<<<<<<< HEAD
         android:background="@color/material_blue_grey_950"
-        />
-=======
+
+
         android:editable = "true"/>
->>>>>>> checkpoint-35-assignment
+
 
 </LinearLayout>
