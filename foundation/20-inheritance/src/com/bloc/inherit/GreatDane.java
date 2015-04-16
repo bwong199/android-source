@@ -20,6 +20,8 @@ class GreatDane extends Dog {
             sizeIndex = 0;
         }
         setSize(fromSizeIndex(sizeIndex));
+        
+        
     }
     
     int getSizeIndex() {

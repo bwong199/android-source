@@ -38,7 +38,9 @@ public class Main extends Object {
 			if (chihuahua.getSizeIndex() != 1) {
 				System.out.println("Your chihuahua should be \"small\" now, hmm…\n");
 				System.exit(1);
-			}
+			
+            
+            }
 		} catch (Exception e) {
 			System.out.println("Something went wrong in the Chihuahua code… Can't believe I just typed that");
 			e.printStackTrace();

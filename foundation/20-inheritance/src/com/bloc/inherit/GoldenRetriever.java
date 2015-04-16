@@ -17,6 +17,9 @@ class GoldenRetriever extends Dog {
         if (++mPlayCounter == 3){
             changeSize(false);
             mPlayCounter = 0;
+            
+            
+            
         }
     }
 
