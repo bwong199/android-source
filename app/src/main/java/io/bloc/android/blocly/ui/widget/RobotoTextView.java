@@ -9,6 +9,8 @@ import android.widget.TextView;
 import java.util.HashMap;
 import java.util.Map;
 
+import io.bloc.android.blocly.R;
+
 /**
  * Created by benwong on 2015-04-13.
  */

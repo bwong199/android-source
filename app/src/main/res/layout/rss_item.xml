@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_rss_item_feed_title"
-        android:text="A giant squid appeared abruptly today in lower Manhattan. The squid appeared peaceful at first but violence quickly escalated after a tourist attempted to ha~
+        android:text="A giant squid appeared abruptly today in lower Manhattan. The squid appeared peaceful at first but violence quickly escalated after a tourist attempted to ha~"
         android:layout_marginTop="8dp"/>
 
 </RelativeLayout>
