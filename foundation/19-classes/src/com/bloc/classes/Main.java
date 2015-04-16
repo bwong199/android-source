@@ -23,6 +23,9 @@ public class Main extends Object {
 		Method play = recoverMethod("play");
 		Method cutHair = recoverMethod("cutHair");
 
+        
+        
+        
 		Dog dog = new Dog();
 
 		// Test Getters and Setters

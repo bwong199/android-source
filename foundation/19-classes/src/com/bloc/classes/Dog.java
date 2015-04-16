@@ -32,6 +32,12 @@ class Dog {
     
 
     
+    
+    
+    
+    
+    
+    
     float getHairLength(){
         return mHairLength;
     }
