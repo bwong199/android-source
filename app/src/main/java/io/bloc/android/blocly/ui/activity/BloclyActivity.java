@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import io.bloc.android.blocly.BloclyApplication;
 import io.bloc.android.blocly.R;
+import io.bloc.android.blocly.ui.adapter.ItemAdapter;
 
 /**
  * Created by benwong on 2015-04-13.

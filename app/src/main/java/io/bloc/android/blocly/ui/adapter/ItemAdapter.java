@@ -6,14 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import io.bloc.android.blocly.BloclyApplication;
 import io.bloc.android.blocly.R;
+import io.bloc.android.blocly.api.DataSource;
 import io.bloc.android.blocly.api.model.RssFeed;
 import io.bloc.android.blocly.api.model.RssItem;
 
 /**
  * Created by benwong on 2015-04-13.
  */
-public class ItemAdapter {
+
     public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ItemAdapterViewHolder> {
 
 

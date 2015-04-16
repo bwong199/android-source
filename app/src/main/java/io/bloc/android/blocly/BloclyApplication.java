@@ -8,7 +8,7 @@ import io.bloc.android.blocly.api.DataSource;
 /**
  * Created by benwong on 2015-04-13.
  */
-public class BloclyApplication {
+
     public class BloclyApplication extends Application {
 
         // #1
