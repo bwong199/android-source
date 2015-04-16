@@ -10,6 +10,8 @@
         android:text="Hello, world!"
         android:textSize="26sp"
         android:gravity="center"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:background="@color/material_blue_grey_950"
+        />
 
 </LinearLayout>
