@@ -1,7 +1,11 @@
 package io.bloc.android.blocly.api.model;
 
 /**
+<<<<<<< HEAD
  * Created by benwong on 2015-04-13.
+=======
+ * Created by benwong on 2015-04-14.
+>>>>>>> checkpoint-35-assignment
  */
 public class RssItem {
     private String guid;
@@ -15,6 +19,20 @@ public class RssItem {
     private boolean favorite;
     private boolean archived;
 
+<<<<<<< HEAD
+=======
+    public RssItem(String guid, String title, String description, String url, String imageUrl, long rssFeedId, long datePublished, boolean favorite) {
+        this.guid = guid;
+        this.title = title;
+        this.description = description;
+        this.url = url;
+        this.imageUrl = imageUrl;
+        this.rssFeedId = rssFeedId;
+        this.datePublished = datePublished;
+        this.favorite = favorite;
+    }
+
+>>>>>>> checkpoint-35-assignment
     public String getGuid() {
         return guid;
     }
@@ -50,6 +68,7 @@ public class RssItem {
     public boolean isArchived() {
         return archived;
     }
+<<<<<<< HEAD
 
     public RssItem(String guid, String title, String description, String url, String imageUrl, long rssFeedId, long datePublished, boolean read, boolean favorite, boolean archived) {
         this.guid = guid;
@@ -67,4 +86,6 @@ public class RssItem {
 
 
     }
+=======
+>>>>>>> checkpoint-35-assignment
 }
