@@ -20,7 +20,8 @@ import io.bloc.android.blocly.ui.adapter.ItemAdapter;
  */
 
     public class BloclyActivity extends Activity {
-        @Override
+    ItemAdapter itemAdapter;
+    @Override
         protected void onCreate(Bundle savedInstanceState){
             super.onCreate((savedInstanceState));
             setContentView(R.layout.activity_blocly);
@@ -50,9 +51,12 @@ import io.bloc.android.blocly.ui.adapter.ItemAdapter;
         }
     }
 
+<<<<<<< HEAD
 
 
 
 
 
 >>>>>>> checkpoint-35-assignment
+=======
+>>>>>>> checkpoint-37-assignment

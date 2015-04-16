@@ -2,12 +2,22 @@
     package="io.bloc.android.blocly">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+>>>>>>> checkpoint-37-assignment
 
 >>>>>>> checkpoint-36-assignment
     <application android:name=".BloclyApplication"
         android:allowBackup="true"
         android:label="@string/app_name"
+<<<<<<< HEAD
+=======
+
+>>>>>>> checkpoint-37-assignment
         android:theme="@style/AppTheme">
 
 
