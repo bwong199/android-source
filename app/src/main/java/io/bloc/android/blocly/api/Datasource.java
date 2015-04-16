@@ -7,9 +7,9 @@ import io.bloc.android.blocly.api.model.RssFeed;
 import io.bloc.android.blocly.api.model.RssItem;
 
 /**
- * Created by benwong on 2015-04-14.
+ * Created by benwong on 2015-04-13.
  */
-public class Datasource {
+public class DataSource {
     private List<RssFeed> feeds;
     private List<RssItem> items;
 
@@ -40,4 +40,6 @@ public class Datasource {
                     0, System.currentTimeMillis(), false, false));
         }
     }
+
+
 }
