@@ -33,6 +33,8 @@ public class Main extends Object {
 		colors[3] = fruits[3].getColor();
 		colors[4] = new OrangeColor();
 
+        
+        
 		
 		System.out.println("/************************/");
 		System.out.println("/*                      */");
