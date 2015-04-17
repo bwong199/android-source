@@ -39,6 +39,7 @@ public class FunMethods extends Object {
 		Object[] copyArray = new Object[original.length - 1];
 		for (int i = 0; i < copyArray.length; i++) {
 			copyArray[i] = original[i];
+            
 		}
 		return copyArray;
 	}
