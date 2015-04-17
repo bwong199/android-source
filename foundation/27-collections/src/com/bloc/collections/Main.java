@@ -20,6 +20,7 @@ public class Main extends Object {
 			pastries[5] = new Pastry("Croissant");
 			pastries[6] = new Pastry("Danish");
 			pastries[7] = new Pastry("Raspberry Tart");
+            
 
 			// Create a favorite pastries object
 			FavoritePastries favoritePastries = new FavoritePastries();
