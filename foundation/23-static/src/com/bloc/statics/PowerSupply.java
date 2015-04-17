@@ -32,6 +32,7 @@ public class PowerSupply extends Object {
 				mAppliances[i] = null;
 			}
 		}
+        
 	}
 
 	public boolean hasAppliance(Appliance appliance) {

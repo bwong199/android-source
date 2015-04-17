@@ -29,6 +29,7 @@ public class Main extends Object {
 			System.exit(1);
 		}
 		
+        
 		System.out.println("/************************/");
 		System.out.println("/*                      */");
 		System.out.println("/*                      */");
