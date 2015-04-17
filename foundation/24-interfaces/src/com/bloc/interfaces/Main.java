@@ -25,6 +25,7 @@ public class Main extends Object {
 		albert.putOnShoes();
 		albert.findAPartner();
 		albert.salsa();
+        
 
 		System.out.println("/************************/");
 		System.out.println("/*                      */");

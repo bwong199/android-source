@@ -25,6 +25,7 @@ public class Albert extends Person implements SalsaDancer {
        
         public void salsa(){
             
+            
         }
     
     
