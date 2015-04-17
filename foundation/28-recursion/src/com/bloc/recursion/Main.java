@@ -40,6 +40,7 @@ public class Main extends Object {
 			e.printStackTrace();
 			System.out.println("Something went wrong in your recursion");
 			System.exit(1);
+            
 		}
 
 		System.out.println("/************************/");
