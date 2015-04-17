@@ -36,6 +36,7 @@ public class Main extends Object {
 		tarantula.feed();
 		tarantula.wash();
 		tarantula.exercise();
+        
 
 		/************************************************
 	 	 *	ASSIGNMENT:
