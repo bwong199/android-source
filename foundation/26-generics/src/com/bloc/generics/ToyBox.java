@@ -34,5 +34,6 @@ class ToyBox extends Object {
 
 	public int getToyCount() {
 		return mToys.length;
+        
 	}
 }

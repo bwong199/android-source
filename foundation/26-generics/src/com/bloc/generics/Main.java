@@ -33,5 +33,6 @@ public class Main extends Object {
 		System.out.println("/*                      */");
 		System.out.println("/*                      */");
 		System.out.println("/************************/\n");
+        
 	}
 }
